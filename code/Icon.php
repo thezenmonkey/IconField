@@ -78,7 +78,7 @@ class Icon extends DBField {
 		}
 		
 		// figure out the full system location for the file
-		$filePath = BASE_PATH.str_replace('/resources', '', $url);
+		$filePath = BASE_PATH.$url;
 		if (!file_exists($filePath)){
 			return false;
 		}
